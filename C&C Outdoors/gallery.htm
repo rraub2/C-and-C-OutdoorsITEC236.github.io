@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--index page for C&C Outdoors-->
+<!--Programmer Reed Raubach-->
+<html lang="en-US">
+    <head>
+        <!--Metadata-->
+        <meta charset="utf-8">
+        <meta name="description" content="World Class hunting outfitter close to home">
+        <title>Gallery</title>
+        <link rel="icon" type="image/png" href="media/favicon.png">
+        <link rel="Stylesheet" href="style.css"/>
+        <link rel="Stylesheet" href="slicknav.min.css"/>
+
+        
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="jquery.slicknav.min.js"></script>
+        <script>
+            $(function(){
+                $('#menu').slicknav();
+            });
+        </script>
+
+    </head>
+
+    <body>
+    
+    <nav>
+        <p>C&C Outdoors</p>
+        <ul id="menu">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="sales.htm">Sales</a>
+                <ul>
+                    <li><a href="deer.htm">Deer Hunting</a></li>
+                    <li><a href="turkey.htm">Turkey Hunting</a></li>
+                    <li><a href="fishing.htm">Fishing</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.htm">Gallery</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="application.htm">Application</a></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <div class="images">
+            <input type="radio" name="slide" id="img1" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+
+            <img src="media/gallery-1.jpg" class="m1" alt="img1">
+            <img src="media/gallery-2.jpg" class="m2" alt="img2">
+            <img src="media/gallery-3.jpg" class="m3" alt="img3">
+            <img src="media/gallery-4.jpg" class="m4" alt="img4">
+        </div>
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+            <label for="img4"></label>
+        </div>
+    </div>
+
+    <video controls>
+        <source src="media/Deer-vid.mp4">
+    </video>
+
+
+   
+ 

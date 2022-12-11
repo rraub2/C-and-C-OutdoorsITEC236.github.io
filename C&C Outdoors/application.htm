@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--index page for C&C Outdoors-->
+<!--Programmer Reed Raubach-->
+<html lang="en-US">
+    <head>
+        <!--Metadata-->
+        <meta charset="utf-8">
+        <meta name="description" content="World Class hunting outfitter close to home">
+        <title>Application</title>
+        <link rel="icon" type="image/png" href="media/favicon.png">
+        <link rel="Stylesheet" href="style.css"/>
+        <link rel="Stylesheet" href="slicknav.min.css"/>
+
+        
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script src="jquery.slicknav.min.js"></script>
+        <script>
+            $(function(){
+                $('#menu').slicknav();
+            });
+        </script>
+
+    </head>
+
+    <body>
+    
+    <nav>
+        <p>C&C Outdoors</p>
+        <ul id="menu">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="sales.htm">Sales</a>
+                <ul>
+                    <li><a href="deer.htm">Deer Hunting</a></li>
+                    <li><a href="turkey.htm">Turkey Hunting</a></li>
+                    <li><a href="fishing.htm">Fishing</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.htm">Gallery</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="application.htm">Application</a></li>
+        </ul>
+    </nav>
+
+    <form action="response.htm" method="GET">
+
+        <div class="wrapper">
+            <div class="title">
+                Contact Form
+            </div>
+
+            <div class="form">
+                <div class="input_field">
+                    <label>Full Name</label>
+                    <input type="text" required minlength="15" maxlength="25" placeholder="Enter your full name" class="input">
+                </div>
+
+                <div class="input_field">
+                    <label>Address</label>
+                    <input type="text" required minlength="15" maxlength="50" placeholder="Enter your address" class="input">
+                </div>
+
+                <div class="input_field">
+                    <label>City</label>
+                    <input type="text" required minlength="4" maxlength="25" placeholder="Enter your city" class="input">
+                </div>
+
+                <div class="input_field">
+                    <label>State</label>
+                    <select name="state" required id="state">
+                        <option value="Placeholder"></option>
+                        <option value="Illinois">IL</option>
+                        <option value="Kentucky">KY</option>
+                        <option value="Missouri">MO</option>
+                        <option value="Indiana">IN</option>
+                        <option value="Wisconsin">WI</option>
+                        <option value="Iowa">IA</option>
+                        <option value="Ohio">OH</option>
+                        <option value="Arkansas">AR</option>
+                        
+                        
+                      </select><br>
+            
+                </div>
+
+                <div class="input_field">
+                    <label>Zip Code</label>
+                    <input type="text" required minlength="5" maxlength="10" pattern="\d{5}([\-]d{4})?"placeholder= "E.g. 99999 or 99999-9999" class="input">
+                </div>
+
+                <div class="input_field">
+                    <label>Phone Number</label>
+                    <input type="tel" required minlength="10" maxlength="12" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="E.g. 999-999-9999" class="input">
+                </div>
+
+                <div class="input_field">
+                    <label>Email Address</label>
+                    <input type="email" required minlength="10" maxlength="25" placeholder="Enter your email address" class="input">
+                </div>
+
+                <div class="input_field">
+                    <label>Submission Date</label>
+                    <input type="date" required class="input">
+                </div>
+
+                <div class="input_field">
+                    <label>Inquiry Type</label>
+                    <form required> 
+                        <input type="checkbox"  id="checkbox" name="Deer Hunting" value="Deer Hunting">
+                        <label for="Deer Hunting"> Deer Hunting</label><br>
+                        <input type="checkbox"  id="checkbox" name="Turkey Hunting" value="Turkey Hunting">
+                        <label for="Turkey Hunting">Turkey Hunting</label><br>
+                        <input type="checkbox"  id="checkbox" name="Fishing" value="Fishing">
+                        <label for="Fishing"> Fishing</label>
+                        
+                      </form>
+                    </div>
+                   
+                </div>
+
+                <div class="input_field">
+                    <label>Waiver</label>
+                    <form>
+                        <input type="radio" id="radio" required name="Waiver" value="Yes">Yes<br>
+                        <input type="radio" id="radio" required name="Waiver" value="No">No<br>
+                 
+                      </form>
+             
+                    
+                </div>
+
+                <div class="input_field">
+                    <br><label>Create a Password</label>
+                    <input type="password" placeholder="Create a password" required class="input"><br>
+                </div>
+
+                <div class="input_field">
+                    <br><label>Message</label>
+                    <textarea name="message" placeholder= "Type Your Message" minlength="20" maxlength="200" required class="textarea"></textarea>
+                </div>
+
+                <br><input type="submit"  value="Submit"><br>
+                <br><input type="reset" value="Reset">
+
+    
+            </div>
+        </div> 
+    </form>    
+        
+
+ 
